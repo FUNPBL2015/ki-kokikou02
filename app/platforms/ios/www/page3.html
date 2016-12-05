@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+        <!-- Google Map API -->
+        <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBT4ccFj4zBx7Swj2gQvIWty5lFAsQT1Og&sensor=false"
+                type="text/javascript"
+                charset="UTF-8">
+        </script>
+    
+        <script type="text/javascript">
+          function initialize() {
+            
+            var mapOptions = {
+              center: new google.maps.LatLng(35.658892, 139.755286),    //地図上で表示させる緯度経度
+              zoom: 14,                                                 //地図の倍率
+              mapTypeId: google.maps.MapTypeId.ROADMAP                  //地図の種類
+            };
+            
+            var map = new google.maps.Map(document.getElementById("map_canvas"),
+                                          mapOptions);
+        
+          }
+        </script>   
+    </head>
+    
+    <body onload="initialize()">
+
+        <!-- 地図の描画領域 -->
+        <div style="text-align: center">
+        　　<div id="map_canvas" style="width:400px; height:500px"></div>
+        </div>
+
+    </body>
+</html>
