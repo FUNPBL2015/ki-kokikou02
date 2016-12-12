@@ -1,7 +1,8 @@
+<!--
 <ons-page>
     <ons-toolbar>
      　 <div class="left"><ons-back-button>Back</ons-back-button></div>
-        <div class="center">Navigator</div>
+        <div class="center">カードリスト</div>
     </ons-toolbar>
 
     <div style="text-align: center">
@@ -27,4 +28,87 @@
         </ons-button>
     </div>
 
-</ons-page>
+</ons-page> 
+
+
+-->
+
+<ons-page>
+    <ons-toolbar>
+     　 <div class="left"><ons-back-button>Back</ons-back-button></div>
+        <div class="center">カードリスト</div>
+    </ons-toolbar>
+
+
+<!--ここから一つ目の項目-->
+        <ons-list-item modifier="chevron" class="item">
+        <!-- 一つ一つのリストを宣言するためのタグ。 modifier="chevron"で右矢印付きのリストが表示される。 -->
+          <ons-row> <!-- 一列のリストの内容を書いていく -->
+            <ons-col width="60px"> <!--　一行のリストの内容を書いていく -->
+              <div class="item-thum"><img src = "001.jpg" width="50" height="100"></div> <!--画像 -->
+            </ons-col>
+            <ons-col>
+              <header>
+                <span class="item-title">Item Title</span> <!--Title-->
+                <span class="item-label">4h</span> <!--追加日時-->
+              </header>
+              <p class="item-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p> <!--詳細の記述-->
+            </ons-col>
+          </ons-row>                          
+        </ons-list-item>
+<!-- 一つ目の項目終わり-->        
+
+                <ons-list-item modifier="chevron" class="item">
+          <ons-row>
+            <ons-col width="60px"> 
+              <div class="item-thum"></div>
+            </ons-col>
+            <ons-col>
+              <header>
+                <span class="item-title">aaa Title</span>
+                <span class="item-label">3h</span>
+              </header>
+              <p class="item-desc">saaaipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </ons-col>
+          </ons-row>                          
+        </ons-list-item>
+
+        <ons-list-item modifier="chevron" class="item">
+          <ons-row>
+            <ons-col width="60px"> 
+              <div class="item-thum"></div>
+            </ons-col>
+            <ons-col>
+              <header>
+                <span class="item-title">Another Item Title</span>
+                <span class="item-label">6h</span>
+              </header>
+              <p class="item-desc">Ut enim ad minim veniam.</p>
+            </ons-col>
+          </ons-row>                          
+        </ons-list-item>
+
+        <ons-list-item modifier="chevron" class="item">
+          <ons-row>
+            <ons-col width="60px"> 
+              <div class="item-thum"></div>
+            </ons-col>
+            <ons-col>
+              <header>
+                <span class="item-title">Yet Another Item Title</span>
+                <span class="item-label">1day ago</span>
+              </header>
+              <p class="item-desc">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            </ons-col>
+          </ons-row>                          
+        </ons-list-item>
+      </ons-list>
+    </ons-page>
+  </ons-template>
+
+  <!-- Master Detailsページここまで -->
+
+
+</ons-page> 
+
+
